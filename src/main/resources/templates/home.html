@@ -25,6 +25,24 @@ can find volunteer organization to volunteer for.
   <br/>
   <a th:href="Event.html" th:action="@{/Event}">Event</a>
   <br/>
+
+
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Desc</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="event : ${eventList}">
+      <td th:text="${event.Name}"></td>
+      <td th:text="${car.description}"></td>
+    </tr>
+    </tbody>
+
+  </table>
 </div>
 
 
